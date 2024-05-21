@@ -1,11 +1,14 @@
 @import "../../../styles/variables.scss";
-
 main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-image: url(/assets/svg/background.svg);
+  background-color: #353141;
+
+
 
   section {
     height: 100%;
@@ -13,27 +16,36 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .main-section {
     gap: 8px;
 
-    flex-grow: 1;
-    background-color: $gray-bg;
+    
+    
   }
 
   .form-section {
-    flex-grow: 0.3;
+    flex-grow: 0.1;
     padding: 0 35px;
 
+    position: relative;
+    width: 400px;
+    height: 750px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 35px;
       font-weight: bold;
       margin-bottom: 45px;
+      color: #A3F9FF;
     }
 
     .btn-wrapper {
